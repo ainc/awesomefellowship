@@ -378,7 +378,7 @@ a.enlarge:before {
 
 #portfolio {background-color: #fafafa; padding-top:100px;}
 
-#portfolio h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; color: #383333; }
+#portfolio h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; color: #ffffff; }
 
 #portfolio h4 {font:20px/20px 'JournalRegular', Arial, sans-serif;color:#7ca5b7; margin-bottom:25px;}
 
@@ -388,6 +388,21 @@ a.enlarge:before {
 
 #work4 figure {margin-bottom:15px;}
 #work4 figure a:before {color: #ff1440;}*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* Sponsors*/
+
+#sponsors {background-color: #fafafa; padding-top:100px;}
+
+#sponsors h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; color: #ffffff; }
+
+#sponsors h4 {font:20px/20px 'JournalRegular', Arial, sans-serif;color:#7ca5b7; margin-bottom:25px;}
+
+#sponsors p {font-weight:200; color:#a1a1a1;font-size: 13px; line-height:22px; margin-bottom:20px;}
+
 /*--------------------------------------------------------------------------------------------------*/
 
 

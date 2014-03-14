@@ -363,7 +363,7 @@ a.enlarge:before {
 
 #f h3 {font: 30px 'ExoBold', Arial, sans-serif; text-transform: uppercase; color: #383333;}
 
-#f h4 {font:20px/20px 'JournalRegular', Arial, sans-serif;color:#383333; margin-bottom:25px;font-size: 27px}
+#f h4 {font:20px/20px 'Exo', Arial, sans-serif;color:#383333; margin-bottom:25px;font-size: 13px}
 
 #f p {font-weight:200; color:#a1a1a1;font-size: 13px; line-height:22px; margin-bottom:20px;}
 
@@ -378,7 +378,7 @@ a.enlarge:before {
 
 #portfolio {background-color: #fafafa; padding-top:100px;}
 
-#portfolio h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; color: #ffffff; }
+#portfolio h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; }
 
 #portfolio h4 {font:20px/20px 'JournalRegular', Arial, sans-serif;color:#7ca5b7; margin-bottom:25px;}
 
@@ -395,7 +395,7 @@ a.enlarge:before {
 
 /* Sponsors*/
 
-#sponsors {background-color: #fafafa; padding-top:100px;}
+#sponsors {background-color: #545454; padding-top:100px;}
 
 #sponsors h3 {font: 30px 'ExoThin', Arial, sans-serif; text-transform: uppercase; color: #ffffff; }
 

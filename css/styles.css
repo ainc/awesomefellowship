@@ -467,5 +467,6 @@ a.enlarge:before {
 
 .individualSponsors {
   font-size: 22px;
-  color: #ff1440;
+  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+  color: #ad0827;
 }

@@ -384,6 +384,8 @@ a.enlarge:before {
 
 #portfolio p {font-weight:200; color:#a1a1a1;font-size: 13px; line-height:22px; margin-bottom:20px;}
 
+#portfolio a {text-decoration: none;}
+
 /*#work4-slider {background:none;height:351px;}
 
 #work4 figure {margin-bottom:15px;}

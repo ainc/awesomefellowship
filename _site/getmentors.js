@@ -1,7 +1,7 @@
 var request = require('request');
 var fs = require('fs');
 
-var mentors = [{"title":"Founder","website":"http://www.linkedin.com/in/noahkagan","name":"Noah Kagan","company":"AppSumo","website_text":"Founder, AppSumo. Former Marketing Director, Mint.com. Former PM, Facebook","image":"http://awesomeinc.org/images/120x119xkagan.jpg.pagespeed.ic.56n827S4v9.jpg"},
+var mentors = [{"title":"Founder","website":"http://www.linkedin.com/in/noahkagan","name":"Noah2  Kagan","company":"AppSumo","website_text":"Founder, AppSumo. Former Marketing Director, Mint.com. Former PM, Facebook","image":"http://awesomeinc.org/images/120x119xkagan.jpg.pagespeed.ic.56n827S4v9.jpg"},
 {"title":"Founder","website":"http://www.linkedin.com/in/nihalmehta","name":"Nihal Mehta","company":"LocalResponse. Partner, ENIAC Ventures","website_text":"Founder, LocalResponse. Partner, ENIAC Ventures","image":"http://awesomeinc.org/images/120x119xmehta.jpg.pagespeed.ic.5rqx5N3oxH.jpg"},
 {"title":"Founder","website":"http://www.engr.uky.edu/alumni/hod/davis-l-marksbury/","name":"Davis Marksbury","company":"Exstream Software (sold to HP)","website_text":"Founder, Exstream Software (sold to HP)","image":"http://awesomeinc.org/images/120x119xmarksbury.jpg.pagespeed.ic.Du_svn3ZEJ.jpg"},
 {"title":"Founder","website":"http://www.badgirlventures.com/index.php?option\u003dcom_content\u0026view\u003darticle\u0026id\u003d26\u0026Itemid\u003d34","name":"Candace Klein","company":"SoMoLend","website_text":"Founder, SoMoLend","image":"http://awesomeinc.org/images/120x119xklein.jpg.pagespeed.ic.ye9E0wYzyp.jpg"},
@@ -32,7 +32,7 @@ var mentors = [{"title":"Founder","website":"http://www.linkedin.com/in/noahkaga
 {"title":"Project Manager","website":"http://www.linkedin.com/pub/keith-kurzendoerfer/3/aa4/127","name":"Keith Kurzendoerfer","company":"APAX Software","website_text":"Project Manager, APAX Software","image":"http://awesomeinc.org/images/kurzendoerfer.jpg"},
 {"title":"Founder. Owner","website":"http://www.linkedin.com/in/wayneyeager","name":"Wayne Yeager","company":"Webalytics. Bailey Run Farm","website_text":"Founder, Webalytics. Owner at Bailey Run Farm","image":"http://awesomeinc.org/images/yeager.jpg"},
 {"title":"Founder","website":"http://www.linkedin.com/pub/drew-curtis/18/285/32b","name":"Drew Curtis","company":"Fark.com","website_text":"Founder, Fark.com","image":"http://awesomeinc.org/images/120x119xcurtis.jpg.pagespeed.ic.VTQQMUw6pQ.jpg"},
-{"title":"CEO","website":"http://www.linkedin.com/pub/drew-curtis/18/285/32b","name":"Drew Curtis","company":"Fark.com","website_text":"Founder, Fark.com","image":"http://awesomeinc.org/images/120x119xcurtis.jpg.pagespeed.ic.VTQQMUw6pQ.jpg"}];
+{"title":"CEO","website":"http://www.linkedin.com/in/brianpoe","name":"Brian Poe","company":"Corrisoft","website_text":"CEO, Corrisoft","image":"mentors/brian_poe.jpg"}];
 
 for(var i=0; i < mentors.length; i++) {
 	(function () {	

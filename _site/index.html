@@ -16,6 +16,7 @@
 	<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">	
 	<link href="css/responsive.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/modalPopLite.css" rel="stylesheet" type="text/css" >
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -34,6 +35,9 @@
     <script src="js/custom.js"></script>
 	<script src="js/bootstrap-scrollspy.js"></script>
     <script src="js/jquery.videoBG.js"></script>
+    <script src="js/modalPopLite.js"></script>
+        <script src="js/modalPopLite.min.js"></script>
+
 
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -54,67 +58,17 @@
 		                  zoom: 14 });
 	});
 	</script>
- <!-- Hello Bar Script********************************************************** 
-  <script type="text/javascript">
-    var stub_showing = false;
- 
-    function woahbar_show() { 
-        if(stub_showing) {
-          $('.woahbar-stub').slideUp('fast', function() {
-            $('.woahbar').show('bounce', { times:3, distance:15 }, 100); 
-            $('body').animate({"marginTop": "2.4em"}, 250);
-          }); 
-        }
-        else {
-          $('.woahbar').show('bounce', { times:3, distance:15 }, 100); 
-          $('body').animate({"marginTop": "2.4em"}, 250);
-        }
-    }
- 
-    function woahbar_hide() { 
-        $('.woahbar').slideUp('fast', function() {
-          $('.woahbar-stub').show('bounce', { times:3, distance:15 }, 100);  
-          stub_showing = true;
-        }); 
- 
-        if( $(window).width() > 1024 ) {
-          $('body').animate({"marginTop": "0px"}, 250); // if width greater than 1024 pull up the body
-        }
-    }
- 
-    $().ready(function() {
-        window.setTimeout(function() {
-        woahbar_show();
-     }, 5000);
-    });
-</script>
-    <!-- /Hello Bar Script******************************************************** -->
 
-    
-  </head>
-<!-- HELLO BAR ################################################# -->
+   <script type="text/javascript"> 
+    $(function () 
+      {     
+        $('#popup-wrapper').modalPopLite({ openButton: '#clicker', closeButton: '#close-btn' }); 
+      }); 
+    </script> 
+ </head>
 <body data-spy="scroll" data-target=".navbar">
 
-  <div class="woahbar">
-    <span>
-      Sign up for updates on our startups
-      <form style="padding:0px" action="http://awesomeinc.us2.list-manage.com/subscribe?u=5114422b2183673d50186748d&id=de5f188075" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <input style="margin: auto; margin-bottom: 0;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!--<input style="margin: auto;margin-top: 0" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"> -->
-        <a class="btn" href="apply.html">Sign up</a>
-      </form>
-    </span>
-  </div>
-    <!-- For hiding bar **************************************************
-    <a class="close-notify" onclick="woahbar_hide();"><img class="woahbar-up-arrow" src="woahbar-up-arrow.png"></a>
-</div>
-<div class="woahbar-stub" style="display:block">
-    <a class="show-notify" onclick="woahbar_show();"><img class="woahbar-down-arrow" src="woahbar-down-arrow.png"></a>
-</div>
-<!-- /For hiding bar -->
   
-<!-- /HELLO BAR ################################################# -->
-
 
     <!-- NAVBAR ############################################### -->
     <div class="navbar navbar-fixed-top" id="navbar">
@@ -131,6 +85,7 @@
               <li><a href="#mentors">Mentors</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="faq.html">FAQ</a></li>
+              <li><a id="clicker" style="color: #FF1440;">Stay Connected</a></li>
               <li><a href="apply.html" style="color: #FF1440;">Apply</a></li>
             </ul>
           
@@ -139,9 +94,13 @@
     </div>
     <!-- /NAVBAR ############################################### -->
 
-
-
-
+   <!-- Modal Email Popup ############################################### -->
+ 
+    <div id="popup-wrapper" style="background-color: #ccc;">I am a popup box. Content can be anything. 
+      <a id="close-btn" href="#">Close</a> 
+    </div> 
+    <!-- /Modal Email Popup ############################################### -->
+   
     <!-- HOME ############################################### -->
     
     <div class="home" id="home">
@@ -181,6 +140,10 @@
     </div> <!-- /home -->
     
     <!-- /HOME ############################################### -->
+
+
+
+
 
 
 

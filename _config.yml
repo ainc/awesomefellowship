@@ -1,0 +1,5 @@
+name: Awesome Fellowship
+collections: 
+  profiles: 
+    permalink: /profiles/:path/
+    output: true

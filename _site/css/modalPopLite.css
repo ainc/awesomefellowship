@@ -20,7 +20,7 @@
 	-webkit-box-shadow: 0 0px 25px rgba(0,0,0,.9);
 	-moz-box-shadow: 0 0px 25px rgba(0,0,0,.9);
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);    
-    border: 5px solid #335805;
+    border: 4px solid #FF1440;
     
 }
 
@@ -41,6 +41,30 @@
      
 }
 
+#modalPopLite-wrapper1 {
+	width: 35%;
+}
+
+#popup-wrapper {
+	padding: 30px 50px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+#popup-wrapper h2 {
+	font-size: 17px;
+}
+
+#popup-wrapper .button {
+	border-radius: 2px;
+	border: 2px;
+	padding: 4px 10px;
+}
+
+#close-btn {
+	padding: 8px;
+}
 .popBox-container 
 {
      display:none;

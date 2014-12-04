@@ -1,10 +1,8 @@
-- company-name: You Saw Me
+- product: The Verve
+  company-name: You Saw Me
+  img: /img/YSM_brand.png
+  bio: "You Saw Me invented the Verve, a patented machine-washable retroreﬂective vest embedded with custom-color LEDs for runners, bicyclists, and ANYONE wanting to be noticed. We've created a fun, functional way to save the lives of pedestrians on the road. Visibility safety meets cool; customizability meets versatility; brighter is better; you saw me."
+
+- company-name: BlinkScan
   product: academy
-  bio: Sept - Dec
-  time: evenings
-  early-bird-price: 429/month
-  standard-price: 533/month
-  early-bird-date: Aug 31
-  url: /academy/
-  logo: logo_big.png
-  status: 'active'
+

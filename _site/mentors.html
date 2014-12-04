@@ -14,26 +14,39 @@
     <link href="css/journal-font.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">	
-	<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">	
-	<link href="css/responsive.css" rel="stylesheet">
-    
+  	<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">	
+  	<link href="css/responsive.css" rel="stylesheet">
+    <link href="/css/modalPopLite.css" rel="stylesheet" type="text/css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Script files -->
-	<script src="js/jquery.js"></script>
-    <script src="js/jquery.easing-1.3.pack.js"></script>
-    <script src="js/jquery.flexslider.js"></script> 
-	<script src="js/jquery.fancybox-1.3.4.pack.js"></script> 
-    <script src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script src="/js/jquery.js"></script>
+    <script src="/js/jquery.easing-1.3.pack.js"></script>
+    <script src="/js/jquery.flexslider.js"></script> 
+  <script src="/js/jquery.fancybox-1.3.4.pack.js"></script> 
+    <script src="/js/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script src="/js/jquery.gmap.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="/js/jquery.form.js"></script>    
+    <script src="/js/custom.js"></script>
+  <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/jquery.videoBG.js"></script>
+    <script src="/js/modalPopLite.js"></script>
+        <script src="/js/modalPopLite.min.js"></script>
   <script type="text/javascript" src="js/angular.js"></script>
   <script type="text/javascript" src="js/mentors.js"></script>
     
-  </head>
-
-
+ 
+<script type="text/javascript"> 
+    $(function () 
+      {     
+        $('#popup-wrapper').modalPopLite({ openButton: '#clicker', closeButton: '#close-btn' }); 
+      }); 
+    </script> 
+ </head>
 
   <body data-spy="scroll" data-target=".navbar" onResize="window.location.href = window.location.href"  ng-app >
   
@@ -51,6 +64,7 @@
               <li><a href="index.html#perks">Perks</a></li>
               <li><a href="index.html#mentors">Mentors</a></li>
               <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li><a id="clicker" style="color: #FF1440; cursor:pointer">Stay Connected</a></li>
               <li><a href="apply.html" style="color: #FF1440;">Apply</a></li>
             </ul>
           
@@ -58,6 +72,25 @@
       </div>
     </div>
     <!-- /NAVBAR ############################################### -->
+
+<!-- Modal Email Popup ############################################### -->
+ 
+    <div id="popup-wrapper" style="background-color: #ccc;">
+      <h1>
+        Sign up now to get updates on our teams
+      </h1>
+      <h2>
+        Enter your email below:
+      </h2>
+      <form style="padding:0px" action="http://awesomeinc.us2.list-manage.com/subscribe?u=5114422b2183673d50186748d&id=de5f188075" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input style="margin: auto; width:170px" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <input style="color: white; background-color: rgb(212, 63, 58);" onmouseover="this.style.color='rgb(255,155,155)'" onmouseout="this.style.color='white'" type="submit" value="Join Now" name="subscribe" id="mc-embedded-subscribe" class="button">
+        <br>
+      </form>
+      <a id="close-btn" href="#">Close</a> 
+    </div> 
+    <!-- /Modal Email Popup ############################################### -->
+
     <div>
     
     	<div class="container" ng-controller="MentorsCtrl">

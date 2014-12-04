@@ -1,4 +1,7 @@
 name: Awesome Fellowship
+highlighter: pygments
+gems:
+ - jekyll-sitemap
 collections: 
   profiles: 
     permalink: /profiles/:path/

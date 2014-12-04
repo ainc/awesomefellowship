@@ -6,27 +6,34 @@ layout: page
 To make changes to course information see _data/profile-list.yml
 {% endcomment %}
 
-{% for profile in site.data.profile-list %}
 
 
 <!-- Team ############################################### -->
 <div class="container">
-  <div class="row" id="team-profile">
-    <div class="span8">
-      <h1>
-        {{ profile.company-name }} Hello
-      </h1>
+  <div class="row head1" id="team-profile">
+    <div class="span7">
+      
+      <h2 style="{{ page.head-style }}">
+        {{ page.company-name }} 
+      </h2>
+      <iframe src="{{ page.iframe-source }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <h3>Team Bio:</h3>
+      <p>
+        {{ page.bio }}
+      </p>  
 
+    </div>
+    <div class="span4 right-side">
+      <img src="{{ page.img }}">
+    
+      <h3>{{ page.product }}</h3>
+      <img src="{{ page.product-img }}" class="product">
+
+    </div>
     
 
-    </div>
-    <div class="span4">
-      World
-    </div>
-
   </div>
+  
 </div>
-
 <!-- /Team ############################################### -->
 
-{% endfor %}

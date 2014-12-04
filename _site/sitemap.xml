@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  
+  <url>
+    <loc>/blinkscan/</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/yousawme/</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/apply.html</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/ccrecruiting/</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/faq.html</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/pawnmetrics/</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>/sportgeeks/</loc>
+    <lastmod>2014-12-04T16:12:37-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>/index.html</loc>
+    <lastmod>2014-11-22T20:41:17Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>/mentors.html</loc>
+    <lastmod>2014-11-24T17:21:48Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>/perks.html</loc>
+    <lastmod>2014-10-22T22:36:20Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

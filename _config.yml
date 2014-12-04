@@ -6,3 +6,5 @@ collections:
   profiles: 
     permalink: /profiles/:path/
     output: true
+exclude: [Gemfile, Gemfile.lock, github.php, README.md]
+include: [.htaccess]

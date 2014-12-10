@@ -5,8 +5,14 @@ body {overflow-x:hidden;}
 
 /*TEAM PROFILE*/
 
+#team-profile h2 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
 #team-profile h3 {
   margin: 15px;
+  font-size: 24px;
 }
 
 #team-profile .product {
@@ -15,6 +21,16 @@ body {overflow-x:hidden;}
 
 #team-profile img {
   width: 225px;
+}
+
+#team-profile p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+#team-profile .right-side {
+  border-left: 2px solid black;
 }
 
 /*--------------------------------------------------------------------------------------------------*/

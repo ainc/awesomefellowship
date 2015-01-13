@@ -30,10 +30,26 @@ To make changes to course information see _data/profile-list.yml
       <img src="{{ page.product-img }}" class="product">
 
     </div>
-    
+  
 
   </div>
-  
+    <div class="row head1" id="team-members">
+      <h2> 
+        Meet the Team 
+      </h2>
+      {% if page.team-member-number == 'two' %} <!--CHECK HOW MANY MEMBERS THEY HAVE -->
+        <div class="span6"> <!--TWO TEAM MEMBERS -->
+          <img src="{{ page.member-one-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
+        </div>
+        <div class="span6">
+          <img src="{{ page.member-two-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a> </p>
+        </div>
+      {% else %} <!--THREE TEAM MEMBERS -->
+      <h3>3</h3>
+      {% endif %}
+    </div>
 </div>
 <!-- /Team ############################################### -->
 

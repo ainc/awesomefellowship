@@ -33,6 +33,20 @@ body {overflow-x:hidden;}
   border-left: 2px solid black;
 }
 
+#team-members .span6, #team-members .span4 {
+  margin: 0;
+}
+
+div#team-members, div#team-profile{ 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div#team-members {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*--------------------------------------------------------------------------------------------------*/
 /* NAVBAR  */
 

@@ -33,7 +33,7 @@ body {overflow-x:hidden;}
   border-left: 2px solid black;
 }
 
-#team-members .span6, #team-members .span4 {
+#team-members .span6, #team-members .span4, #team-members .span12 {
   margin: 0;
 }
 
@@ -45,6 +45,12 @@ div#team-members, div#team-profile{
 div#team-members {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#team-members img {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 15px;
 }
 
 /*--------------------------------------------------------------------------------------------------*/

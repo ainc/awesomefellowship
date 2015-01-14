@@ -16,7 +16,11 @@ To make changes to course information see _data/profile-list.yml
       <h2 style="{{ page.head-style }}">
         {{ page.company-name }} 
       </h2>
+      {% if page.check-video == 'yes' %}
       <iframe src="{{ page.iframe-source }}" width="100%" height="350px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% else %}
+      <img src="/img/companies/comingsoon.jpg"> 
+      {% endif %}
       <h3>Team Bio:</h3>
       <p>
         {{ page.bio }}
@@ -33,10 +37,16 @@ To make changes to course information see _data/profile-list.yml
   
 
   </div>
-    <div class="row head1" id="team-members">
+    <div class="row head1" id="team-members"> <!-- TEAM MEMBER SECTION -->
       <h2> 
         Meet the Team 
       </h2>
+      {% if page.team-member-number == 'one' %}
+        <div class="span12"> <!--TWO TEAM MEMBERS -->
+          <img src="{{ page.member-one-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
+        </div>
+        {% endif %}
       {% if page.team-member-number == 'two' %} <!--CHECK HOW MANY MEMBERS THEY HAVE -->
         <div class="span6"> <!--TWO TEAM MEMBERS -->
           <img src="{{ page.member-one-image }}">
@@ -46,8 +56,21 @@ To make changes to course information see _data/profile-list.yml
           <img src="{{ page.member-two-image }}">
           <p style="margin-top:10px;"> <a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a> </p>
         </div>
-      {% else %} <!--THREE TEAM MEMBERS -->
-      <h3>3</h3>
+        {% endif %}
+      {% if page.team-member-number == 'three' %} <!--THREE TEAM MEMBERS -->
+        <div class="span4"> <!--TWO TEAM MEMBERS -->
+          <img src="{{ page.member-one-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
+        </div>
+        <div class="span4"> 
+          <img src="{{ page.member-two-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a> </p>
+        </div>
+        <div class="span4"> 
+          <img src="{{ page.member-three-image }}">
+          <p style="margin-top:10px;"> <a href="{{ page.member-three-link }}" target="_blank"> {{ page.member-three }} </a> </p>
+        </div>
+
       {% endif %}
     </div>
 </div>

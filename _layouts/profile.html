@@ -2,6 +2,7 @@
 layout: page
 ---
 
+
 {% comment %} 
 To make changes to course information see _data/profile-list.yml
 {% endcomment %}
@@ -41,38 +42,68 @@ To make changes to course information see _data/profile-list.yml
       <h2> 
         Meet the Team 
       </h2>
-      {% if page.team-member-number == 'one' %}
-        <div class="span12"> <!--TWO TEAM MEMBERS -->
-          <img src="{{ page.member-one-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
-        </div>
+      <ul class="grid cs-style-3">
+      {% if page.team-member-number == 'one' %} <!--CHECK HOW MANY MEMBERS THEY HAVE -->
+        <li>
+          <figure>
+            <img src="{{ page.member-one-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
         {% endif %}
       {% if page.team-member-number == 'two' %} <!--CHECK HOW MANY MEMBERS THEY HAVE -->
-        <div class="span6"> <!--TWO TEAM MEMBERS -->
-          <img src="{{ page.member-one-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
-        </div>
-        <div class="span6">
-          <img src="{{ page.member-two-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a> </p>
-        </div>
-        {% endif %}
-      {% if page.team-member-number == 'three' %} <!--THREE TEAM MEMBERS -->
-        <div class="span4"> <!--TWO TEAM MEMBERS -->
-          <img src="{{ page.member-one-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a> </p>
-        </div>
-        <div class="span4"> 
-          <img src="{{ page.member-two-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a> </p>
-        </div>
-        <div class="span4"> 
-          <img src="{{ page.member-three-image }}">
-          <p style="margin-top:10px;"> <a href="{{ page.member-three-link }}" target="_blank"> {{ page.member-three }} </a> </p>
-        </div>
-
+        <li>
+          <figure>
+            <img src="{{ page.member-one-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="{{ page.member-two-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
       {% endif %}
+      {% if page.team-member-number == 'three' %} <!--THREE TEAM MEMBERS -->
+        <li>
+          <figure>
+            <img src="{{ page.member-one-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-one-link }}" target="_blank"> {{ page.member-one }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="{{ page.member-two-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-two-link }}" target="_blank"> {{ page.member-two }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="{{ page.member-three-image }}" alt="img01">
+            <figcaption>
+              <span><a href="{{ page.member-three-link }}" target="_blank"> {{ page.member-three }} </a></span>
+            </figcaption>
+          </figure>
+        </li>
+        {% endif %}
+
+</ul>
+<script src="/js/toucheffects.js"></script>
+        
     </div>
 </div>
+
+
 <!-- /Team ############################################### -->
 

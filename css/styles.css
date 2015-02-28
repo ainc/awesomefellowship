@@ -55,8 +55,8 @@ div#team-members {
 }
 
 #team-members img {
-  max-height: 200px;
-  max-width: 200px;
+  height: 200px;
+  width: 200px;
   border-radius: 15px;
 }
 
@@ -176,7 +176,6 @@ figure a:hover img {
 }
 
 figure a:before {
-	content: "+";
 	display: block;
 	font-size: 40px;
 	line-height: 1em;

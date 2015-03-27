@@ -103,7 +103,8 @@
 	  {"title":"Founder","website":"http://morrisindustries.com/about/founder","name":"Nate Morris","company":"Morris Industries","website_text":"Founder, Morris Industries | Co-Founder, Rubicon Global","image":"mentors/nateMorris.jpg"}, 
 	  {"title":"CEO","website":"http://www.linkedin.com/pub/fielding-rogers/0/960/a04","name":"Fielding Rogers","company":"Ale-8-One Bottling Company","website_text":"CEO, Ale-8-One","image":"mentors/Fielding-Rogers.jpg"}, 
 	  {"title":"CEO","website":"https://www.linkedin.com/pub/billy-harper/10/983/575","name":"Billy Harper","company":"Harper Industries","website_text":"CEO, Harper Industries","image":"mentors/billy_harper.jpg"}, 
-	  {"title":"CEO","website":"http://www.linkedin.com/in/brianpoe","name":"Brian Poe","company":"Corrisoft","website_text":"CEO, Corrisoft","image":"mentors/brian_poe.jpg"}
+	  {"title":"CEO","website":"http://www.linkedin.com/in/brianpoe","name":"Brian Poe","company":"Corrisoft","website_text":"CEO, Corrisoft","image":"mentors/brian_poe.jpg"},
+	  {"title":"CEO","website":"https://www.linkedin.com/pub/stephen-gray/0/a9/242/en","name":"Stephen Gray","company":"Gray Construction","website_text":"CEO, Gray Construction","image":"mentors/stephen_gray.jpg"}
 	  ];
 	}
 

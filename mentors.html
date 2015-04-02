@@ -9,25 +9,29 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">    
-    <link href="css/exo-font.css" rel="stylesheet">
-    <link href="css/journal-font.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">	
-  	<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet">	
-  	<link href="css/responsive.css" rel="stylesheet">
-    <link href="/css/modalPopLite.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.css" rel="stylesheet" defer="defer">    
+    <link href="/css/exo-font.css" rel="stylesheet" defer="defer">
+    <link href="/css/journal-font.css" rel="stylesheet" defer="defer">
+    <link href="/css/flexslider.css" rel="stylesheet" defer="defer">  
+  <link href="/css/jquery.fancybox-1.3.4.css" rel="stylesheet" defer="defer"> 
+  <link href="/css/responsive.css" rel="stylesheet" defer="defer">
+    <link href="/css/styles.css" rel="stylesheet" defer="defer"> 
+    <link href="/css/modalPopLite.css" rel="stylesheet" type="text/css" defer="defer" >
+        <link rel="shortcut icon" href="../favico n.ico" defer="defer"> 
+    <link rel="stylesheet" type="text/css" href="/css/default.css" defer="defer"/>
+    <link rel="stylesheet" type="text/css" href="/css/component.css" defer="defer"/>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Script files -->
-	<script src="/js/jquery.js"></script>
-    <script src="/js/jquery.easing-1.3.pack.js"></script>
-    <script src="/js/jquery.flexslider.js"></script> 
-  <script src="/js/jquery.fancybox-1.3.4.pack.js"></script> 
-    <script src="/js/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/js/jquery.js" ></script>
+    <script src="/js/jquery.easing-1.3.pack.js" ></script>
+    <script src="/js/jquery.flexslider.js" ></script> 
+  <script src="/js/jquery.fancybox-1.3.4.pack.js" ></script> 
+    <script src="/js/jquery.mousewheel-3.0.4.pack.js"  ></script>
   <script src="/js/jquery.gmap.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="/js/jquery.form.js"></script>    
@@ -36,8 +40,9 @@
     <script src="/js/jquery.videoBG.js"></script>
     <script src="/js/modalPopLite.js"></script>
         <script src="/js/modalPopLite.min.js"></script>
-  <script type="text/javascript" src="js/angular.js"></script>
-  <script type="text/javascript" src="js/mentors.js"></script>
+  <script type="text/javascript" src="/js/angular.js" ></script>
+  <script type="text/javascript" src="/js/mentors.js" ></script>
+      <script src="/js/modernizr.custom.js" defer="defer"></script>
     
  
 <script type="text/javascript"> 
@@ -64,7 +69,8 @@
               <li><a href="index.html#perks">Perks</a></li>
               <li><a href="index.html#mentors">Mentors</a></li>
               <li><a href="index.html#portfolio">Portfolio</a></li>
-              <li><a id="clicker" style="color: #FF1440; cursor:pointer">Stay Connected</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+             <!--  <li onclick="buttonClick()"><a id="clicker" style="color: #FF1440; cursor:pointer">Stay Connected</a></li> -->
               <li><a href="apply.html" style="color: #FF1440;">Apply</a></li>
             </ul>
           
@@ -74,8 +80,14 @@
     <!-- /NAVBAR ############################################### -->
 
 <!-- Modal Email Popup ############################################### -->
- 
+     <script>
+      function buttonClick() {
+        $("#popup-wrapper").show();
+      }
+    </script> 
     <div id="popup-wrapper" style="background-color: #ccc;">
+      <img src="/img/A-faded.png" style="width:80%; max-width:100%"/>
+
       <h1>
         Sign up now to get updates on our teams
       </h1>
@@ -89,18 +101,19 @@
       </form>
       <a id="close-btn" href="#">Close</a> 
     </div> 
-    <!-- /Modal Email Popup ############################################### -->
+
+   <!-- /Modal Email Popup ############################################### -->
 
     <div>
     
-    	<div class="container" ng-controller="MentorsCtrl">
-    		
-  			<div class="row head1">
-    			<div class="span12" >
-    				<h2>Mentors</h2>
-    			</div>
-      	</div> 
-  			<ul class="thumbnails">        
+      <div class="container" ng-controller="MentorsCtrl">
+        
+        <div class="row head1">
+          <div class="span12" >
+            <h2>Mentors</h2>
+          </div>
+        </div> 
+        <ul class="thumbnails">        
           <li ng-repeat="mentor in mentors" class="span2" style="height: 300px">
             <a href="{{mentor.website}}" target="_blank"><img ng-src="{{mentor.image}}" class="img-rounded" width="120" height="120" alt="{{mentor.name}}"></a>
             <div classs="caption">
@@ -108,8 +121,8 @@
               <p><a href="{{mentor.website}}" target="_blank">{{mentor.website_text}}</a></p>
             </div>
           </li>
-  			</ul>
-    	</div> <!-- /container -->
+        </ul>
+      </div> <!-- /container -->
     
     </div> <!-- /about -->
 
@@ -212,37 +225,37 @@
 
 
 
-	<!-- FOOTER ############################################### -->
+  <!-- FOOTER ############################################### -->
    
      <div id="footer">
     
-    	<div class="container">
-        	
-			<div class="row" id="footer_bar">
-            	<div class="span12" >
-            		<p><a href="http://awesomeinc.org" target="_blank" style="color:inherit;">&copy;2014 Awesome Inc</a></p>
-            	</div>
-        	</div> 
+      <div class="container">
+          
+      <div class="row" id="footer_bar">
+              <div class="span12" >
+                <p><a href="http://awesomeinc.org" target="_blank" style="color:inherit;">&copy;2014 Awesome Inc</a></p>
+              </div>
+          </div> 
 
-      	</div><!-- /container -->
+        </div><!-- /container -->
     </div><!-- /footer -->
 
     <!-- /Footer ############################################### -->
     
     <!-- /Google Analytics ############################################### -->
-	<script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-2028878-11']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2028878-11']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 <!-- /Google Analytics ############################################### -->
 
   </body>

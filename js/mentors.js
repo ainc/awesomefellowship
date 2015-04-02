@@ -25,6 +25,7 @@
 				$(this).stop().animate({opacity:0}, 400);
 			});		
 		});
+
 		
 		// Grayscale w canvas method
 		function grayscale(src){

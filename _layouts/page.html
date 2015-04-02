@@ -37,21 +37,21 @@ To make changes to course information see _data/profile-list.yml
 
     <!-- Script files -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="/js/jquery.js" defer="defer"></script>
-    <script src="/js/jquery.easing-1.3.pack.js" defer="defer"></script>
-    <script src="/js/jquery.flexslider.js" defer="defer"></script> 
-	<script src="/js/jquery.fancybox-1.3.4.pack.js" defer="defer"></script> 
-    <script src="/js/jquery.mousewheel-3.0.4.pack.js" defer="defer" ></script>
-	<script src="/js/jquery.gmap.js"defer="defer"</script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"defer="defer"></script>
-	<script src="/js/jquery.form.js"defer="defer"></script>		
-    <script src="/js/custom.js"defer="defer"></script>
-	<script src="/js/bootstrap-scrollspy.js"defer="defer"></script>
-    <script src="/js/jquery.videoBG.js"defer="defer"></script>
-    <script src="/js/modalPopLite.js"defer="defer"></script>
+	<script src="/js/jquery.js" ></script>
+    <script src="/js/jquery.easing-1.3.pack.js" ></script>
+    <script src="/js/jquery.flexslider.js" ></script> 
+	<script src="/js/jquery.fancybox-1.3.4.pack.js" ></script> 
+    <script src="/js/jquery.mousewheel-3.0.4.pack.js"  ></script>
+	<script src="/js/jquery.gmap.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="/js/jquery.form.js"></script>		
+    <script src="/js/custom.js"></script>
+	<script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/jquery.videoBG.js"></script>
+    <script src="/js/modalPopLite.js"></script>
         <script src="/js/modalPopLite.min.js"></script>
-  <script type="text/javascript" src="/js/angular.js" defer="defer"></script>
-  <script type="text/javascript" src="/js/mentors.js" defer="defer"></script>
+  <script type="text/javascript" src="/js/angular.js" ></script>
+  <script type="text/javascript" src="/js/mentors.js" ></script>
       <script src="/js/modernizr.custom.js" defer="defer"></script>
 
 
@@ -94,7 +94,7 @@ To make changes to course information see _data/profile-list.yml
       <div class="navbar-inner">
         <div class="container">
          
-         <a href="#home" class="brand hidden-phone" id="brand" ><img src="/img/logo.png" alt=""></a>
+         <a href="/#home" class="brand hidden-phone" id="brand" ><img src="/img/logo.png" alt=""></a>
          
           
             <ul class="nav">
@@ -104,7 +104,7 @@ To make changes to course information see _data/profile-list.yml
               <li><a href="/#mentors">Mentors</a></li>
               <li><a href="/#portfolio">Portfolio</a></li>
               <li><a href="/faq.html">FAQ</a></li>
-              <li><a id="clicker" style="color: #FF1440; cursor:pointer">Stay Connected</a></li>
+              <li onclick="buttonClick()"><a id="clicker" style="color: #FF1440; cursor:pointer">Stay Connected</a></li>
               <li><a href="/apply.html" style="color: #FF1440;">Apply</a></li>
             </ul>
           
@@ -131,7 +131,17 @@ To make changes to course information see _data/profile-list.yml
       </form>
       <a id="close-btn" href="#">Close</a> 
     </div> 
+
+    <script>
+      function buttonClick() {
+        $("#popup-wrapper").show();
+      }
+
+
+    </script>
     <!-- /Modal Email Popup ############################################### -->
+
+
 
 {{ content }}
 

@@ -143,6 +143,10 @@ div#team-members {
 
 /* Image styles  */
 
+#companies img {
+  max-width: none;
+}
+
 
 .mobile-img {margin-top:60px;}
 

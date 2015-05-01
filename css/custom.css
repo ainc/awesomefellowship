@@ -1,0 +1,37 @@
+.container{margin:0 auto;}
+body {overflow-x:hidden;}
+
+span.anchor {
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
+
+[class*="span"] {
+  margin-left: 0px;
+}
+[class*="row"] {
+	margin-left: 0px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*VIDEOS*/
+
+#video .head2 {
+  margin-bottom: 0;
+  border-bottom: none;
+  
+}
+
+#video .head2 h2 {
+	font: 100px "ExoBlack", Arial,sans-serif;	
+	color: #E2E2E2;
+}
+
+#video h2 { 
+
+}
+
+/*--------------------------------------------------------------------------------------------------*/

@@ -37,4 +37,48 @@ span.anchor {
 /*--------------------------------------------------------------------------------------------------*/
 
 
-/* IMAGES */
+/* FOOTER */
+
+#footer .span2 {
+  width: 210px;
+}
+
+#footer h3 {
+    position: relative;
+    font: 'Exo', Arial, sans-serif;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    color: gray;
+}
+#footer span {
+  padding: 0 20px;
+}
+#footer h3:before, #footer h3:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: gray;
+}
+#footer h3:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+#ind-sponsors div {
+
+  text-align: center
+}
+
+#ind-sponsors a {
+    font: 20px 'Exo', Arial, sans-serif;
+  text-transform: uppercase;
+  color: gray;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+

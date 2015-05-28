@@ -71,13 +71,27 @@ span.anchor {
 
 #ind-sponsors div {
 
-  text-align: center
+  text-align: center;
 }
 
 #ind-sponsors a {
     font: 20px 'Exo', Arial, sans-serif;
   text-transform: uppercase;
   color: gray;
+}
+
+#footer .center-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer .single-img {
+  width: 200px;
+}
+
+#footer .span2, #footer .span12 {
+  margin-left: 1.5%;
 }
 
 /*--------------------------------------------------------------------------------------------------*/

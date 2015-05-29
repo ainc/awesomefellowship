@@ -1,0 +1,98 @@
+.container{margin:0 auto;}
+body {overflow-x:hidden;}
+
+span.anchor {
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
+}
+
+[class*="span"] {
+  margin-left: 0px;
+}
+[class*="row"] {
+	margin-left: 0px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*VIDEOS*/
+
+#video .head2 {
+  margin-bottom: 0;
+  border-bottom: none;
+  
+}
+
+#video .head2 h2 {
+	font: 100px "ExoBlack", Arial,sans-serif;	
+	color: #E2E2E2;
+}
+
+#video h2 { 
+
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* FOOTER */
+
+#footer .span2 {
+  width: 210px;
+}
+
+#footer h3 {
+    position: relative;
+    font: 'Exo', Arial, sans-serif;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    color: gray;
+}
+#footer span {
+  padding: 0 20px;
+}
+#footer h3:before, #footer h3:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: gray;
+}
+#footer h3:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+#ind-sponsors div {
+
+  text-align: center;
+}
+
+#ind-sponsors a {
+    font: 20px 'Exo', Arial, sans-serif;
+  text-transform: uppercase;
+  color: gray;
+}
+
+#footer .center-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer .single-img {
+  width: 200px;
+}
+
+#footer .span2, #footer .span12 {
+  margin-left: 1.5%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+

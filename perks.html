@@ -23,104 +23,174 @@ layout: page
 		margin: 0;
 
 	}
+	@media (min-width: 1200px) {
+		.container.full {
+			margin-left: 0;
+			padding-left: 0;
+			margin-right: 0;
+			padding-right: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+}
+	#perks-pg img {
+		width: 150px;
+		margin: auto;
+		display: block;
+	}
+	#perks-pg h3 {
+		text-transform: uppercase;
+		font-size: 34px;
+	}
+	#perks-pg {
+		color: white;
+	}
+	#perks-pg p {
+		color: white;
+		font-size: 14px;
+		width: 80%;
+		padding-left: 20%;
+	}
+	#perks-pg #talent {
+		background-color: rgb(44, 41, 40);
+		padding-bottom: 40px;
+	}
+	#perks-pg #space {
+		background-color: rgb(48, 48, 44);
+		padding-bottom: 70px;	
+	}
+	#perks-pg #space p, #experience p {
+		width: 100%;
+		padding-left:0%;
+	}
+	#perks-pg #support {
+		background-color: rgb(66, 66, 60);
+		padding-bottom: 30px;	
+	}
+	#perks-pg #experience {
+		background-color: rgb(72, 72, 68);
+		padding-bottom: 70px;	
+	}
 
+	.col-lg-4 {
+		background: none;
+	}
+	b {
+		font-size: 20px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+	#talent .offset-p {
+		margin-top: 30px;
+	}
+	#space .offset-p {
+		margin-top: 50px;
+	}
+	#experience .offset-p {
+		margin-top: 30px;
+	}
+	#perks-pg a {
+		color: rgb(220, 32, 37);
+	}
+	#perks-pg div.col-lg-12,  {
+		padding-left: 0;
+		
+	}
+	div.col-lg-4 {
+		padding-right: 0;
+	}
 
     </style>
 
   
     <div>
     
-    	<div class="container" ng-controller="MentorsCtrl">
-    		
-  			<div class="row head1">
-    			<div class="span12" >
-    				<h2>Perks</h2>
-    			</div>
-      	</div> 
-  			
-
-	<div>
-
-
-<table id="benefit" align = "center" cellpadding = "15" width = "500">
-<tbody>
-<tr class="header">
-<th colspan="2" align="left"><h3>Talent</h3></th><th><h3>Value</h3></th>
-</tr>
-<tr>
-<td><img src="img/programmers.png" height="80" width="100"/></td>
-<td class="info">Access to in-house tech talent to offset early development needs</td>
-<td align="center"><strong>$5,000</strong></td>
-</tr>
-<tr>
-<td><img src="img/graphic.png" height="80" width="100"/></td>
-<td class="info">Access to designers who will work with your startup on branding activities</td>
-<td align="center"><strong>$5,000</strong></td>
-</tr>
-<tr>
-<td><img src="img/videographers.jpg" height="80" width="100"/></td>
-<td class="info">Access to videographers who will create high quality videos to market your startup</td>
-<td align="center"><strong>$5,000</strong></td>
-</tr>
-<tr>
-<td><img src="img/TeamAlphaLogo.jpg" height="80" width="100"/></td>
-<td class="info">Access to the best interns in town - Team Alpha. Read more about them <a href="http://www.awesomeinc.org/team-alpha">here</a></td>
-<td align="center"><strong>$1,000</strong></td>
-</tr>
-<tr class="header">
-<th colspan="2" align="left"><h3>Space</h3></th><th><h3>Value</h3></th>
-</tr>
-<tr>
-<td><img src="img/coworking.jpg" height="80" width="100"/></td>
-<td class="info">Free office space for your entire team at the Awesome Inc co-working space - including desk space, internet, printing, conference room, mailing address, ping pong table, etc.</td>
-<td align="center"><strong>$7,200</strong></td>
-</tr>
-<tr>
-<td><img src="img/dreamhost.svg" height="80" width="100"/></td>
-<td class="info">Free database and website hosting on Dreamhost servers for up to 12 months</td>
-<td align="center"><strong>$500</strong></td>
-</tr>
-<tr class="header">
-<th colspan="2" align="left"><h3>Support</h3></th><th><h3>Value</h3></th>
-</tr>
-<tr>
-<td><img src="img/legal.png" height="80" width="100"/></td>
-<td class="info">Access to attorneys who will assist with legal filing of your startup - including assistance with documents such as Articles of Organization, Operating Agreement, and more</td>
-<td align="center"><strong>$6,000</strong></td>
-</tr>
-<tr>
-</tr>
-<tr>
-</tr>
-<tr>
-</tr>
-<tr class="header">
-<th colspan="2" align="left"><h3>Experience</h3></th><th><h3>Value</h3></th>
-</tr>
-<tr>
-</tr>
-<tr>
-<td><strong>Mentors</strong></td>
-<td class="info">A <a href="mentors.html">mentor network</a> including entrepreneurs, investors, attorneys, accountants, and other great connections</td>
-<td align="center"><strong>Priceless</strong></td>
-</tr>
-<tr>
-</tr>
-<tr>
-<td><strong>Coaching</strong></td>
-<td class="info">Monthly accountability meetings as well as assistance with customer development, product development, business model design, fundraising, and other pressing issues for growing startups</td>
-<td align="center"><strong>Priceless</strong></td>
-</tr>
-<tr>
-</tr>
-</tbody>
-</table>
-
-<p></p>
+		<div id="perks-pg" class="container full" ng-controller="MentorsCtrl">
 			
-     		</div>
+			<div class="row head1">
+				<div class="col-lg-12" >
+					<h2>Perks</h2>
+				</div>
+	  		</div> 
+  		
+  		<div id="talent">
+  			<div class="row center"><!-- TALENT -->
+  				<div class="col-lg-12">
+  					<h3>Talent</h3> 
+		  			<div class="col-lg-4">
+		  				<img src="/img/talent1.png"/>
+		  				<p>Access to in-house tech talent to offset early development needs</p>
+		  				<p class="offset-p"><b>Value: $5,000</b></p>
+		  			</div>
+		  			<div class="col-lg-4">
+		  				<img src="/img/talent2.png"/>
+		  				<p>Access to designers who will work with your startup on branding activities</p>
+		  				<p><b>Value: $5,000</b></p>
+		  			</div>
+		  			<div class="col-lg-4">
+		  				<img src="/img/talent3.png"/>
+		  				<p>Access to videographers to who will create high quality videos to market your startup</p>
+		  				<p><b>Value: $5,000</b></p>
+		  			</div>
+		  		</div>
 
+  			</div>
+  		</div>
+  		<div id="space">
+  			<div class="row center"><!-- SPACE -->
+  				<div class="col-lg-12">
+  					<h3>Space</h3> 
+		  			<div class="col-lg-offset-2 col-lg-4">
+		  				<img src="/img/space1.png"/>
+		  				<p>Free office space for your entire team at the Awesome Inc co-working space - including desk rental space, internet, printing, conference room, mailing address, ping pong table, etc.</p>
+		  				<p><b>Value: $7,200</b></p>
+		  			</div>
+		  			<div class="col-lg-4">
+		  				<img src="/img/space2.png"/>
+		  				<p>Free Database and website hosting on Dreamhost servers for up to 12 months</p>
+		  				<p class="offset-p"><b>Value: $500</b></p>
+		  			</div>
+		  		</div>
 
+  			</div>
+  		</div>
+  		<div id="support">
+  			<div class="row center"><!-- SUPPORT -->
+  				<div class="col-lg-12">
+  					<h3>Support</h3> 
+		  			<div class="col-lg-offset-4 col-lg-4">
+		  				<img src="/img/support.png"/>
+		  				<p>Access to the legal firm <a href="http://www.dinsmore.com/" target="_blank">Dinsmore & Shohl</a>.</p>
+		  				<p><b>Value: $6,000</b></p>
+		  			</div>
+		  			<!-- <div class="col-lg-offset-2 col-lg-4">
+		  				<img src="/img/support.png"/>
+		  				<p>Access to the accounting firm <a href="http://www.blueandco.com/" target="_blank">Blue & Co.</a> with 4 hr / mo for free.</p>
+		  				<p><b>Value: $6,000</b></p>
+		  			</div> -->
+		  		</div>
+
+  			</div>
+  		</div>
+  		<div id="experience">
+  			<div class="row center"><!-- EXPERIENCE -->
+  				<div class="col-lg-12">
+  					<h3>Experience</h3> 
+		  			<div class="col-lg-offset-2 col-lg-4">
+		  				<img src="/img/experience1.png"/>
+		  				<p>A <a href="/mentors">mentor network</a> including entrepreneurs, investors, attorneys, accountants, and many other priceless connections.</p>
+		  				<p class="offset-p"><b>Value: Priceless</b></p>
+		  			</div>
+		  			<div class="col-lg-4">
+		  				<img src="/img/experience2.png"/>
+		  				<p>Monthly accountablity meetings as well as assistance with customer development, product development, business model design, fundraising, and other pressing issues for growing startups</p>
+		  				<p><b>Value: Priceless</b></p>
+		  			</div>
+		  		</div>
+
+  			</div>
+  		</div>
 
     	</div> <!-- /container -->
     

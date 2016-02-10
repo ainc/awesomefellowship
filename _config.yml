@@ -1,5 +1,5 @@
 name: Awesome Fellowship
-highlighter: pygments
+highlighter: rouge
 gems:
  - jekyll-sitemap
 collections: 

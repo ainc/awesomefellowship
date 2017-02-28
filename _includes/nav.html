@@ -1,0 +1,153 @@
+
+
+<!-- Style -->
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+li {
+    float: left;
+    background-color: #f8f8f8;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #BF001E;
+    z-index: 1000;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	background-color: white;
+    display: block;
+}
+</style>
+<!-- End of Style -->
+
+
+<!-- Nav Bar -->
+<div class="navbar-default navbar-fixed-top collapse navbar-collapse col-sm-6 col-md-6 col-lg-6" >
+
+        <!-- Awesome Fellowship Logo -->
+        <a href="/"><img class="mobile" src="/assets/img/Logo_Horizontal.png" alt="Awesome Fellowship Logo" height="35px" style="margin-top: 8px;"> </a>
+
+        <!-- Nav Main -->
+          <ul class="nav navbar-nav navbar-right col-sm-6 col-md-6 col-lg-6 style="min-width:0"> <!-- RIGHT ALIGNED NAVBAR -->
+
+            <li {% if page.path contains 'about' %} class="active" {% endif %}>   <!-- ABOUT -->
+            	<li class="dropdown">
+                	<a href="/about/" class="dropbtn">About</a>
+                		<div class="dropdown-content">
+      						    <!-- 
+                      <a href="#">Link 1</a>
+      						    <a href="#">Link 2</a>
+      						    <a href="#">Link 3</a> 
+                      -->
+      					</div>
+              </li>
+            </li> 
+
+            <li {% if page.path contains 'media' %} class="active" {% endif %}>   <!-- MEDIA -->
+              <li class="dropdown">
+                	<a href="/media/" class="dropbtn">Media</a>
+                		<div class="dropdown-content">
+      						    <!--
+                      <a href="#">Link 1</a>
+      						    <a href="#">Link 2</a>
+      						    <a href="#">Link 3</a>
+                      -->
+    					     </div>
+              </li>
+            </li> 
+
+            <li {% if page.path contains 'portfolio' %} class="active" {% endif %}>  <!-- PORTFOLIO -->
+              <li class="dropdown">
+                	<a href="/portfolio/" class="dropbtn">Portfolio</a>
+                		<div class="dropdown-content">
+                      <!--
+      						    <a href="#">Link 1</a>
+      						    <a href="#">Link 2</a>
+      						    <a href="#">Link 3</a>
+                     -->
+    					       </div>
+              </li>
+    		    </li>
+
+            <li {% if page.path contains 'perks' %} class="active" {% endif %}>    <!-- PERKS -->
+              <li class="dropdown">
+                	<a href="/perks/" class="dropbtn">Perks</a>
+                		<div class="dropdown-content">
+                    <!--
+      						    <a href="#">Link 1</a>
+      						    <a href="#">Link 2</a>
+      						    <a href="#">Link 3</a>
+                    -->
+    					     </div>
+              </li>
+            </li>
+
+            <li {% if page.path contains 'apply' %} class="active" {% endif %}>   <!-- APPLY -->
+                <li class="dropdown">
+                	<a href="/apply/" class="dropbtn">Apply</a>
+                		<div class="dropdown-content">
+                    <!--
+      						    <a href="#">Link 1</a>
+      						    <a href="#">Link 2</a>
+      						    <a href="#">Link 3</a>
+                    -->
+    					     </div>
+                </li>
+            </li>
+
+            <li {% if page.path contains 'community' %} class="active" {% endif %}>   <!-- COMMUNITY -->
+              <li class="dropdown">
+                	<a href="/apply/" class="dropbtn">Community</a>
+                		<div class="dropdown-content">
+      						<a href="http://www.awesomeinc.org" target="_blank">Startups</a>
+      						<a href="http://www.awesomeincu.com" target="_blank">Coding Courses</a>
+      						<a href="http://www.cherubfund.org" target="_blank">Investment</a>
+                  <a href="http://www.awesomeinc.org/about#calendar" target="_blank">Events</a>
+    					     </div>
+              </li>
+            </li>
+
+           </li>
+		   </ul>
+</div>
+<!-- End of nav bar -->
